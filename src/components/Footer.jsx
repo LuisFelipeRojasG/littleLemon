@@ -1,11 +1,12 @@
 import React from 'react'
 import Logo from '../assets/image/Logo.svg'
+import '../styles/footer.css'
 
 function Footer() {
     return (
-        <>
+        <div className='footerContainer'>
             <img src={Logo} alt="Little Lemon" />
-            <article>
+            <article className='navigation'>
                 <h2>
                     Navigation
                 </h2>
@@ -20,7 +21,7 @@ function Footer() {
                     </il>
                 </ul>
             </article>
-            <article>
+            <article className='contact'>
                 <h2>
                     Contact
                 </h2>
@@ -32,7 +33,7 @@ function Footer() {
                     </il>
                 </ul>
             </article>
-            <article>
+            <article className='social'>
                 <h2>
                     Social Media
                 </h2>
@@ -44,7 +45,7 @@ function Footer() {
                     </il>
                 </ul>
             </article>
-        </>
+        </div>
     )
 }
 

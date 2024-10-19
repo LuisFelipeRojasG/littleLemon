@@ -1,12 +1,10 @@
 import React from 'react'
-import Logo from '../assets/image/Logo.svg'
 
 function Nav() {
   return (
-    <>
-      <img src={Logo} alt="Little Lemon" />
+    <div className='col-start-7 col-end-12'>
       <ul>
-        <li>
+        <li className='flex text-2xl font-Karla font-medium gap-5'>
           <a href="">Home</a>
           <a href="">About</a>
           <a href="">Menu</a>
@@ -15,7 +13,7 @@ function Nav() {
           <a href="">Login</a>
         </li>
       </ul>
-    </>
+    </div>
   )
 }
 

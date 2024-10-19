@@ -1,0 +1,28 @@
+.footerContainer {
+    *display: grid;
+    *grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    justify-content: space-between;
+    background-color: aquamarine;
+}
+
+.footerContainer img {
+    *grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+
+.footerContainer .navigation {
+    *grid-column: 2/3;
+}
+
+.footerContainer .contact {
+    *grid-column: 3/4;
+}
+
+.footerContainer .social {
+    *grid-column: 4/5;
+}
+
+
