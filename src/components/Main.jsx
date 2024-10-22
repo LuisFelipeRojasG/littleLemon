@@ -1,7 +1,10 @@
 import React from 'react'
 import restauranfood from '../assets/image/restauranfood.jpg'
 import SpecialCard from './SpecialCard'
-import data from '../data/dataCard.js'
+import {dataSpecial, dataTestimonial} from '../data/dataCard.js'
+import TestimonialCard from './TestimonialCard.jsx'
+import chefs from '../assets/image/chefs.jpg'
+import restaurant from '../assets/image/restaurant.jpg'
 
 function Main() {
   return (
@@ -22,7 +25,7 @@ function Main() {
         </div>
         <div className='flex justify-between px-48 pb-14 '>
           {
-            data.map((element, index) => (
+            dataSpecial.map((element, index) => (
               <SpecialCard
                 image = {element.image}
                 title = {element.title}
@@ -33,9 +36,34 @@ function Main() {
           }
         </div>
       </section>
-      <section className=' bg-greenlim'>detras</section>
-      <section className=' '>de</section>
-      Main
+      <section className=' bg-greenlim'>
+        <div className=' text-yellowlim font-Markazy font-semibold text-[76px] text-center py-16'>Testimonials</div>
+        <div className='flex justify-between px-28 pb-10'>
+          {
+            dataTestimonial.map((element, index) => (
+              <TestimonialCard
+                image = {element.image}
+                name = {element.name}
+                message = {element.message}
+                key={index}
+              />
+            ))
+          }
+        </div>
+      </section>
+      <section className='flex justify-around my-20'>
+        <div className='w-[500px]'>
+          <h1 className=' text-blacklim font-Markazy font-bold text-[64px]'>Little Lemon</h1>
+          <span className=' text-blacklim font-Markazy font-medium text-[40px]'>Chicago</span>
+          <p className=' text-blacklim font-Karla font-light text-[26px] pb-12 w-[650px] '>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at ex leo. Maecenas enim sem, laoreet at nulla ac, luctus scelerisque massa. Praesent ut molestie nisi. Aliquam arcu lorem, auctor condimentum blandit id, lobortis in nisi. Ut diam justo, euismod in accumsan id, vehicula sit amet tellus. Pellentesque porttitor elit lacus, vitae lacinia magna ultricies quis. Etiam vitae tellus et mi hendrerit consequat. In dictum ligula in elit euismod malesuada. Curabitur varius augue id tempus ultricies. Mauris suscipit porta odio, et pretium nibh scelerisque ut.
+          </p>
+        </div>
+        <div className='relative w-[576px] h-[576px]'>
+          <img className='w-96 h-96 absolute top-0 right-0' src={chefs} alt="chefs" />
+          <img className='w-80 h-80 absolute bottom-0 left-0' src={restaurant} alt="restaurant" />
+        </div>
+      </section>
     </div>
   )
 }

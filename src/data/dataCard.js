@@ -1,8 +1,12 @@
 import greekSalad from '../assets/image/greek_salad.jpg'
 import bruschetta from '../assets/image/bruschetta.png'
 import lemondessert from '../assets/image/lemon_dessert.jpg'
+import perfil01 from '../assets/image/perfil01.jpg'
+import perfil02 from '../assets/image/perfil02.jpg'
+import perfil03 from '../assets/image/perfil03.jpg'
+import perfil04 from '../assets/image/perfil04.jpg'
 
-const data = [
+const dataSpecial = [
     {
         image: greekSalad,
         title: 'Greek Salad',
@@ -20,4 +24,27 @@ const data = [
     }
 ]
 
-export default data
+const dataTestimonial = [
+    {        
+        image: perfil01,
+        name: 'Selena G.',
+        message: 'Really enjoyed the atmosphere.'
+    },
+    {
+        image: perfil02,
+        name: 'Brandon M.',
+        message: 'The greek salad was excellent!'
+    },
+    {
+        image: perfil03,
+        name: 'Peter R.',
+        message: 'You have to try the Greek Salad!'
+    },
+    {
+        image: perfil04,
+        name: 'Neha J.',
+        message: 'Awesome place peaceful atmosphere with delicious food'
+    },
+]
+
+export {dataSpecial, dataTestimonial}

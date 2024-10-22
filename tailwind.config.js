@@ -15,7 +15,8 @@ export default {
       'yellowlim': '#F4CE14',
       'whitelim': '#EDEFEE',
       'blacklim': '#333333',
-      'graylim': '#f2efef'
+      'graylim': '#f2efef',
+      'white': '#ffffff'
     }
   },
   plugins: [],
