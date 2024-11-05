@@ -5,9 +5,10 @@ import Footer from './components/Footer'
 function App() {
 
   return (
-    <div className=" flex flex-col">
+    <div className=" w-screen flex flex-col">
       <Header/>
       <Main />
+      <Footer />
     </div>
   )
 }

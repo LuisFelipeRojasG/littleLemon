@@ -51,7 +51,7 @@ function Main() {
           }
         </div>
       </section>
-      <section className='flex justify-around my-20'>
+      <section className='flex justify-around mt-20 pb-10 border-b-blacklim border-b-8'>
         <div className='w-[500px]'>
           <h1 className=' text-blacklim font-Markazy font-bold text-[64px]'>Little Lemon</h1>
           <span className=' text-blacklim font-Markazy font-medium text-[40px]'>Chicago</span>
