@@ -11,14 +11,14 @@ function Footer() {
                         Navigation
                     </h2>
                     <ul className=' font-Karla text-xl text-blacklim font-medium'>
-                        <il className='flex flex-col'>
+                        <li className='flex flex-col'>
                             <a href="">Home</a>
                             <a href="">About</a>
                             <a href="">Menu</a>
                             <a href="">Reservations</a>
                             <a href="">Order online</a>
                             <a href="">Login</a>
-                        </il>
+                        </li>
                     </ul>
                 </article>
                 <article className='contact'>
@@ -26,11 +26,11 @@ function Footer() {
                         Contact
                     </h2>
                     <ul className=' font-Karla text-xl text-blacklim font-medium'>
-                        <il className='flex flex-col'>
+                        <li className='flex flex-col'>
                             <a href="">Phone Number</a>
                             <a href="">Email</a>
                             <a href="">Address</a>
-                        </il>
+                        </li>
                     </ul>
                 </article>
                 <article className='social'>
@@ -38,11 +38,11 @@ function Footer() {
                         Social Media
                     </h2>
                     <ul className=' font-Karla text-xl text-blacklim font-medium'>
-                        <il className='flex flex-col'>
+                        <li className='flex flex-col'>
                             <a href="">Instagram</a>
                             <a href="">Linkedin</a>
                             <a href="">Pinterest</a>
-                        </il>
+                        </li>
                     </ul>
                 </article>
             </section>

@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import restauranfood from '../assets/image/restauranfood.jpg'
 import SpecialCard from './SpecialCard'
 import {dataSpecial, dataTestimonial} from '../data/dataCard.js'
 import TestimonialCard from './TestimonialCard.jsx'
 import chefs from '../assets/image/chefs.jpg'
 import restaurant from '../assets/image/restaurant.jpg'
+
 
 function Main() {
   return (
@@ -21,7 +22,7 @@ function Main() {
       <section className=' pt-60 h-auto '>
         <div className='flex justify-between px-96 mb-40'>
           <h2 className=' text-blacklim font-Markazy font-medium text-[64px]'>Specials</h2>
-          <button className='w-[250px] p-6 rounded-full text-blacklim font-Karla font-bold text-2xl bg-yellowlim '>Online menu</button>
+          <button className='w-[250px] p-6 rounded-full text-blacklim font-Karla font-bold text-2xl bg-yellowlim'>Online menu</button>
         </div>
         <div className='flex justify-between px-48 pb-14 '>
           {

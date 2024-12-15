@@ -19,6 +19,10 @@ export default {
       'white': '#ffffff'
     }
   },
-  plugins: [],
+  plugins: [
+    require("@tailwindcss/forms")({
+      strategy: 'class',
+    }),
+  ],
 }
 
