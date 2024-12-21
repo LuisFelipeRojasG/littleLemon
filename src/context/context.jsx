@@ -13,8 +13,9 @@ function LemonProvider ({children}) {
 
     const [date, setDate] = useState('')
     const [time, setTime] = useState('')
-    const [guests, setGuests] = useState('')
+    const [tables, setTables] = useState('')
     const [occasion, setOccasion] = useState('')
+    const [active, setActive] = useState(true)
 
     //reducer
     const updateTimes = (state, action) => {
@@ -70,10 +71,12 @@ function LemonProvider ({children}) {
                 setDate,
                 time, 
                 setTime,
-                guests,
-                setGuests,
+                tables,
+                setTables,
                 occasion,
-                setOccasion
+                setOccasion,
+                active,
+                setActive
             }}>
                 {children}
         </LemonContext.Provider>

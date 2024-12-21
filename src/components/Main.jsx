@@ -5,17 +5,21 @@ import {dataSpecial, dataTestimonial} from '../data/dataCard.js'
 import TestimonialCard from './TestimonialCard.jsx'
 import chefs from '../assets/image/chefs.jpg'
 import restaurant from '../assets/image/restaurant.jpg'
+import { useNavigate } from 'react-router-dom'
 
 
 function Main() {
+
+  const navigate = useNavigate()
+
   return (
-    <div>
+    <div id='main'>
       <section>
         <div className='flex flex-col w-screen py-10 px-40 bg-greenlim '>
           <h1 className=' text-yellowlim font-Markazy font-medium text-[64px]'>Little Lemon</h1>
           <span className=' text-whitelim font-Markazy font-light text-[40px]'>Chicago</span>
           <p className=' text-whitelim font-Karla font-light text-[26px] pb-12 w-[420px] '>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
-          <button className='w-[250px] p-6 rounded-full text-blacklim font-Karla font-bold text-2xl bg-yellowlim '>Reserve a Table</button>
+          <button className='w-[250px] p-6 rounded-full text-blacklim font-Karla font-bold text-2xl bg-yellowlim ' onClick={() => navigate('/booking')}>Reserve a Table</button>
         </div>
         <img className=' absolute top-52 right-40 w-[500px] h-[620px] rounded-2xl' src={restauranfood} alt="restaurant food" />
       </section>

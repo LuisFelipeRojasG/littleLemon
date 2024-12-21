@@ -1,4 +1,4 @@
-import Reservation from '../models/reserv.model'
+import Reservation from '../models/reserv.model.js'
 
 const createReservation = async (req, res) => {
     const { fecha, hora, mesa } = req.body

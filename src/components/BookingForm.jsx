@@ -12,15 +12,15 @@ function BookingForm() {
     setDate,
     time, 
     setTime,
-    guests,
-    setGuests,
+    tables,
+    setTables,
     occasion,
     setOccasion
   } = useAuth()
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log("Enviado", date, time, guests, occasion)
+    console.log("Enviado", date, time, tables, occasion)
   }
   
 
@@ -29,7 +29,7 @@ function BookingForm() {
         <label className='text-whitelim font-Karla font-light text-[26px]' htmlFor='res-date'>Choose date</label>
         <input 
           className='mb-5 p-2 rounded-full' 
-          typeof='date' 
+          type='date' 
           id='res-date' 
           value={date}
           onChange={e => setDate(e.target.value)}
@@ -47,16 +47,16 @@ function BookingForm() {
             )}
             
         </select>
-        <label className='text-whitelim font-Karla font-light text-[26px]'  htmlFor="guests">Number of guests</label>
+        <label className='text-whitelim font-Karla font-light text-[26px]'  htmlFor="guests">Choose a table</label>
         <input 
           className='mb-5 p-2 rounded-full' 
-          typeof="number" 
+          type="number" 
           placeholder="1" 
           min="1" 
           max="10" 
-          id="guests" 
-          value={guests}
-          onChange={e => setGuests(e.target.value)}
+          id="tables" 
+          value={tables}
+          onChange={e => setTables(e.target.value)}
         />
         <label className='text-whitelim font-Karla font-light text-[26px]'  htmlFor="occasion">Occasion</label>
         <select 
