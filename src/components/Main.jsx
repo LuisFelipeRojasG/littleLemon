@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import restauranfood from '../assets/image/restauranfood.jpg'
 import SpecialCard from './SpecialCard'
-import {dataSpecial, dataTestimonial} from '../data/dataCard.js'
+import { dataSpecial, dataTestimonial } from '../data/dataCard.js'
 import TestimonialCard from './TestimonialCard.jsx'
 import chefs from '../assets/image/chefs.jpg'
 import restaurant from '../assets/image/restaurant.jpg'

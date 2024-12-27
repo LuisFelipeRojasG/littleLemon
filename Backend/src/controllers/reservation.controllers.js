@@ -1,16 +1,22 @@
 import Reservation from '../models/reserv.model.js'
 
 const createReservation = async (req, res) => {
-    const { fecha, hora, mesa } = req.body
+    const { date, time, table, occasion } = req.body
 
     try {
         const newReservation = new Reservation({
-            fecha,
-            hora,
-            mesa
+            date, 
+            time, 
+            table, 
+            occasion
         })
         const savedReservation = await newReservation.save()
-        res.json(savedReservation)
+        res.json({
+            date: savedReservation.date,
+            time: savedReservation.time,
+            table: savedReservation.table,
+            occasion: savedReservation.occasion
+        })
     } catch (error) {
         res.status(500).json({ message: error.message })
     }

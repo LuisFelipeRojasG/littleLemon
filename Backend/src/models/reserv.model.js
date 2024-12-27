@@ -1,9 +1,22 @@
 import mongoose from 'mongoose'
 
 const reservationSchema = mongoose.Schema({
-    fecha: String,
-    hora: String,
-    mesa: String
+    date: {
+        type: String,
+        require: true
+    },
+    time: {
+        type: String,
+        require: true
+    },
+    table: {
+        type: String,
+        require: true
+    },
+    occasion: {
+        type: String,
+        require: true
+    }
 },
 {
     timestamps: true

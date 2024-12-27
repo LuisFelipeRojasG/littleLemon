@@ -1,5 +1,6 @@
-import { createContext, useContext, useState, useReducer } from "react"
 import React  from "react"
+import { createContext, useContext, useState, useReducer } from "react"
+import { reservRequest } from '../api/reserv.js'
 
 const LemonContext = createContext()
 
@@ -10,12 +11,23 @@ const useAuth = () => {
 }
 
 function LemonProvider ({children}) {
-
+    //const [reserv, setReserv] = useState(null)
     const [date, setDate] = useState('')
     const [time, setTime] = useState('')
-    const [tables, setTables] = useState('')
+    const [table, setTable] = useState('')
     const [occasion, setOccasion] = useState('')
     const [active, setActive] = useState(true)
+    const [errors, setErrors] = useState([])
+
+    const newReserv = async (data) => {
+        try {
+            const res = await reservRequest(data)
+            console.log(res)
+        } catch (error) {
+            console.log(error.response)
+            setErrors(error.response)
+        }
+    }
 
     //reducer
     const updateTimes = (state, action) => {
@@ -71,12 +83,13 @@ function LemonProvider ({children}) {
                 setDate,
                 time, 
                 setTime,
-                tables,
-                setTables,
+                table,
+                setTable,
                 occasion,
                 setOccasion,
                 active,
-                setActive
+                setActive,
+                newReserv
             }}>
                 {children}
         </LemonContext.Provider>
