@@ -24,7 +24,7 @@ const router = createBrowserRouter([
         element: <Reservations />
       },
       {
-        path: '/Success',
+        path: '/success',
         element: <Success />
       }
     ]

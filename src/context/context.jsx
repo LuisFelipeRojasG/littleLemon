@@ -1,6 +1,6 @@
 import React  from "react"
-import { createContext, useContext, useState, useReducer } from "react"
-import { reservRequest } from '../api/reserv.js'
+import { createContext, useContext, useState } from "react"
+import { reservFind, reservRequest } from '../api/reserv.js'
 
 const LemonContext = createContext()
 
@@ -11,26 +11,32 @@ const useAuth = () => {
 }
 
 function LemonProvider ({children}) {
-    //const [reserv, setReserv] = useState(null)
     const [date, setDate] = useState('')
     const [time, setTime] = useState('')
     const [table, setTable] = useState('')
     const [occasion, setOccasion] = useState('')
-    const [active, setActive] = useState(true)
-    const [errors, setErrors] = useState([])
+    const [reservation, setReservation] = useState([])
 
     const newReserv = async (data) => {
         try {
             const res = await reservRequest(data)
-            console.log(res)
         } catch (error) {
             console.log(error.response)
-            setErrors(error.response)
+        }
+    }
+
+    const getReserv = async () => {
+        try {
+            const res = await reservFind()
+            setReservation(res.data)
+            console.log(reservation)
+        } catch (error) {
+            console.log(error.respose)
         }
     }
 
     //reducer
-    const updateTimes = (state, action) => {
+    /*const updateTimes = (state, action) => {
         switch (action.type) {
             case 'disponible':
                 return state = true;
@@ -41,44 +47,15 @@ function LemonProvider ({children}) {
         }
     }
 
-    const initializeTimes = [
-        {
-            time: '17:00',
-            estado: 'disponible'
-        },
-        {
-            time: '18:00',
-            estado: 'disponible'
-        },
-        {
-            time: '19:00',
-            estado: 'disponible'
-        },
-        {
-            time: '20:00',
-            estado: 'disponible'
-        },
-        {
-            time: '21:00',
-            estado: 'disponible'
-        },
-        {
-            time: '22:00',
-            estado: 'disponible'
-        }
-    ]
-
     const availableTimes = () => {
         const [state, dispatch] = useReducer(updateTimes, initializeTimes)
 
         return state, dispatch
-    }
+    }*/
 
     return (
         <LemonContext.Provider 
             value={{
-                availableTimes,
-                initializeTimes,
                 date,
                 setDate,
                 time, 
@@ -87,9 +64,9 @@ function LemonProvider ({children}) {
                 setTable,
                 occasion,
                 setOccasion,
-                active,
-                setActive,
-                newReserv
+                newReserv,
+                getReserv,
+                reservation
             }}>
                 {children}
         </LemonContext.Provider>

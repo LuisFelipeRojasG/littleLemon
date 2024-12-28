@@ -2,7 +2,13 @@ import React from 'react'
 
 function Success() {
   return (
-    <div>Reservation Successful</div>
+    <div className='flex flex-col items-center w-[650px] bg-greenlim m-5 p-5 rounded-3xl'>
+      <h1 className=' text-yellowlim font-Markazy font-medium text-[64px]'>Reservation Successful</h1>
+      <button className='mb-5 p-2 rounded-full bg-yellowlim text-center' onClick={() => navigate('/')}
+        >Return Home</button>
+      <button className='mb-5 p-2 rounded-full bg-yellowlim text-center' value="Make Your reservation" onClick={() => navigate('/booking')}
+        >Make another reservation</button>
+    </div>
   )
 }
 

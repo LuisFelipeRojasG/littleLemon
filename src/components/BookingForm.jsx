@@ -7,8 +7,6 @@ function BookingForm() {
   const navigate = useNavigate()
 
   const {
-    availableTimes,
-    initializeTimes,
     date,
     setDate,
     time, 
@@ -19,15 +17,34 @@ function BookingForm() {
     setOccasion,
     newReserv
   } = useAuth()
-  
+
+  const times = [
+    {time: ''},
+    {time: '17:00'},
+    {time: '18:00'},
+    {time: '19:00'},
+    {time: '20:00'},
+    {time: '21:00'},
+    {time: '22:00'}
+  ]
+
+  const tables = [
+    {table: ''},
+    {table: 'Mesa para 2'},
+    {table: 'Mesa para 3'},
+    {table: 'Mesa para 4'},
+    {table: 'Mesa para grupos'}
+  ]
+
   const onSubmit = (e) => {
     e.preventDefault()
     const data = {date, time, table, occasion}
     newReserv(data)
+    document.getElementById('res-reserv').reset()
   }
 
   return (
-    <form className='flex flex-col' onSubmit={onSubmit}>
+    <form id='res-reserv' className='flex flex-col' onSubmit={onSubmit}>
         <label className='text-whitelim font-Karla font-light text-[26px]' htmlFor='res-date'>Choose date</label>
         <input 
           className='mb-5 p-2 rounded-full' 
@@ -41,28 +58,31 @@ function BookingForm() {
           id='res-time'
           onChange={e => setTime(e.target.value)}
         >
-          <option>Select time</option>
-            {initializeTimes.map((e, index) => 
-              <option value={e.time} key={index}>{e.time}</option>
-            )}
-            
+          {times.map((e, index) => 
+            <option value={e.time} key={index}>{e.time}</option>
+          )}
         </select>
         <label className='text-whitelim font-Karla font-light text-[26px]'  htmlFor="guests">Choose a table</label>
-        <input 
+        <select 
           className='mb-5 p-2 rounded-full'
           id="res-table"
           onChange={e => setTable(e.target.value)}
-        />
+        >
+           {tables.map((e, index) => 
+            <option value={e.table} key={index}>{e.table}</option>
+          )}
+        </select>
         <label className='text-whitelim font-Karla font-light text-[26px]'  htmlFor="occasion">Occasion</label>
         <select 
           className='mb-10 p-2 rounded-full' 
           id="res-occasion"
           onChange={e => setOccasion(e.target.value)}>
+            <option></option>
             <option>Birthday</option>
             <option>Anniversary</option>
         </select>
-        <button className='mb-5 p-2 rounded-full bg-yellowlim text-center' typeof="submit" value="Make Your reservation" onClick={() => 
-    navigate('/Success')}>Make Your reservation</button>
+        <button className='mb-5 p-2 rounded-full bg-yellowlim text-center' typeof="submit" value="Make Your reservation" onClick={() => navigate('/success')}
+        >Make Your reservation</button>
     </form>
   )
 }
