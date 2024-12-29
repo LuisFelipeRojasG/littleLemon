@@ -29,7 +29,6 @@ function LemonProvider ({children}) {
         try {
             const res = await reservFind()
             setReservation(res.data)
-            console.log(reservation)
         } catch (error) {
             console.log(error.respose)
         }

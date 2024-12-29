@@ -3,10 +3,10 @@ import Logo from '../assets/image/Logo.svg'
 
 function Footer() {
     return (
-        <div className='flex flex-row pb-10'>
+        <div className='flex flex-row pb-10 border-b-blacklim border-t-8'>
             <img className=' mx-20 my-20 w-52 basis-1/4' src={Logo} alt="Little Lemon" />
-            <section className='basis-3/4 flex flex-row justify-between pr-40'>
-                <article className='navigation'>
+            <section className='basis-3/4 grid grid-cols-3 gap-10 pr-40'>
+                <article className='px-20'>
                     <h2 className=' font-Markazy text-4xl text-blacklim font-semibold py-10'>
                         Navigation
                     </h2>
@@ -21,7 +21,7 @@ function Footer() {
                         </li>
                     </ul>
                 </article>
-                <article className='contact'>
+                <article className='px-20'>
                     <h2 className=' font-Markazy text-4xl text-blacklim font-semibold py-10'>
                         Contact
                     </h2>
@@ -33,7 +33,7 @@ function Footer() {
                         </li>
                     </ul>
                 </article>
-                <article className='social'>
+                <article className='px-20'>
                     <h2 className=' font-Markazy text-4xl text-blacklim font-semibold py-10'>
                         Social Media
                     </h2>
