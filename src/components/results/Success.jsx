@@ -1,6 +1,10 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 function Success() {
+
+const navigate = useNavigate()
+
   return (
     <div className='flex flex-col items-center w-[650px] bg-greenlim m-5 p-5 rounded-3xl'>
       <h1 className=' text-yellowlim font-Markazy font-medium text-[64px]'>Reservation Successful</h1>
