@@ -4,7 +4,6 @@ import { MONGODB_URL } from './config.js'
 const connectBD = async () => {
     try {
         await mongoose.connect(MONGODB_URL)
-        console.log(typeof(MONGODB_URL))
         console.log("DB is connected")
     } catch (error) {
         console.log(error)

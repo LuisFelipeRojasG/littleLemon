@@ -34,24 +34,6 @@ function LemonProvider ({children}) {
         }
     }
 
-    //reducer
-    /*const updateTimes = (state, action) => {
-        switch (action.type) {
-            case 'disponible':
-                return state = true;
-            case 'No disponible':
-                return state = false;
-            default:
-                return state;
-        }
-    }
-
-    const availableTimes = () => {
-        const [state, dispatch] = useReducer(updateTimes, initializeTimes)
-
-        return state, dispatch
-    }*/
-
     return (
         <LemonContext.Provider 
             value={{
