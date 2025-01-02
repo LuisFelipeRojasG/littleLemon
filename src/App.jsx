@@ -10,9 +10,10 @@ const router = createBrowserRouter([
   
   {
     element: <Layout />,
+    errorElement: <NoMatchRoute />,
     children: [
       {
-        path: '/',
+        path: '/littleLemon',
         element: <Main />
       },
       {
@@ -26,7 +27,7 @@ const router = createBrowserRouter([
       {
         path: '/success',
         element: <Success />
-      }
+      },
     ]
   }
 ])
