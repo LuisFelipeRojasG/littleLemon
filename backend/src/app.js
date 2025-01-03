@@ -3,7 +3,7 @@ import morgan from 'morgan'
 import reservRoutes from './routes/reserv.routes.js'
 import cookieParser from 'cookie-parser'
 import cors from 'cors'
-import { ORIGIN_GITHUB } from './config.js'
+import { ORIGIN } from './config.js'
 
 const app = express()
 
@@ -18,7 +18,7 @@ app.use(cookieParser())
 
 //Para permitir la comunicación entre Backend y Frontend
 app.use(cors({
-    origin: ORIGIN_GITHUB,
+    origin: ORIGIN,
     credentials: true,
 }))
 
