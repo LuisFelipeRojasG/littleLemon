@@ -17,7 +17,7 @@ app.use(cookieParser())
 
 //Para permitir la comunicación entre Backend y Frontend
 app.use(cors({
-    origin: 'https://luisfeliperojasg.github.io/littleLemon/',
+    origin: 'https://luisfeliperojasg.github.io',
     credentials: true,
 }))
 
