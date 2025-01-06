@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom"
 function Nav() {
   
   return (
-    <div className='col-start-7 col-end-12'>
+    <div className=' hidden md:block md:col-start-7  md:col-end-12'>
       <ul>
         <li className='flex text-2xl font-Karla font-medium gap-5'>
           <NavLink to={'/littleLemon'} >Home</NavLink>

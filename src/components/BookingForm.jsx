@@ -47,14 +47,14 @@ function BookingForm() {
     <form id='res-reserv' className='flex flex-col' onSubmit={onSubmit}>
         <label className='text-whitelim font-Karla font-light text-[26px]' htmlFor='res-date'>Choose date</label>
         <input 
-          className='mb-5 p-2 rounded-full' 
+          className='w-auto mb-5 p-2 rounded-full' 
           type='date' 
           id='res-date'
           onChange={e => setDate(e.target.value)}
         />
         <label className='text-whitelim font-Karla font-light text-[26px]'  htmlFor='res-time'>Choose time</label>
         <select 
-          className='mb-5 p-2 rounded-full' 
+          className='w-auto mb-5 p-2 rounded-full' 
           id='res-time'
           onChange={e => setTime(e.target.value)}
         >
@@ -64,7 +64,7 @@ function BookingForm() {
         </select>
         <label className='text-whitelim font-Karla font-light text-[26px]'  htmlFor="guests">Choose a table</label>
         <select 
-          className='mb-5 p-2 rounded-full'
+          className='w-auto mb-5 p-2 rounded-full'
           id="res-table"
           onChange={e => setTable(e.target.value)}
         >
@@ -74,7 +74,7 @@ function BookingForm() {
         </select>
         <label className='text-whitelim font-Karla font-light text-[26px]'  htmlFor="occasion">Occasion</label>
         <select 
-          className='mb-10 p-2 rounded-full' 
+          className='w-auto mb-10 p-2 rounded-full' 
           id="res-occasion"
           onChange={e => setOccasion(e.target.value)}>
             <option></option>

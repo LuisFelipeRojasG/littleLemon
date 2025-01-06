@@ -4,14 +4,18 @@
 
 
 
-## Screenshot
-
-![App Screenshot](https://github.com/LuisFelipeRojasG/littleLemon/blob/main/src/assets/image/Logo.svg)
-
 
 ## Descripción
 
-Proyecto final del curso de Front-End developer de META. Little Lemon es un restaurante que tiene la necesidad de un sistema de reservas.
+Proyecto final del curso de Front-End developer de META. La página web del restaurante Little Lemon requiere la implementación de un sistema de reservas.
+
+## Screenshot
+
+![App Screenshot](https://github.com/LuisFelipeRojasG/littleLemon/blob/main/src/assets/image/littleLemon01.png)
+![App Screenshot](https://github.com/LuisFelipeRojasG/littleLemon/blob/main/src/assets/image/littleLemon02.png)
+![App Screenshot](https://github.com/LuisFelipeRojasG/littleLemon/blob/main/src/assets/image/littleLemon03.png)
+
+
 
 ## Implementación 
 

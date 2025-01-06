@@ -3,14 +3,14 @@ import Logo from '../assets/image/Logo.svg'
 
 function Footer() {
     return (
-        <div className='flex flex-row pb-10 border-b-blacklim border-t-8'>
-            <img className=' mx-20 my-20 w-52 basis-1/4' src={Logo} alt="Little Lemon" />
-            <section className='basis-3/4 grid grid-cols-3 gap-10 pr-40'>
-                <article className='px-20'>
-                    <h2 className=' font-Markazy text-4xl text-blacklim font-semibold py-10'>
+        <div className='w-screen flex flex-col items-center md:flex-row pb-10 border-b-blacklim border-t-8'>
+            <img className=' md:mx-20 my-20 w-72 md:w-52 basis-1/4' src={Logo} alt="Little Lemon" />
+            <section className='basis-3/4 grid md:grid-cols-3 gap-10 md:pr-40'>
+                <article className='md:px-20'>
+                    <h2 className=' font-Markazy text-7xl md:text-4xl text-blacklim font-semibold py-10'>
                         Navigation
                     </h2>
-                    <ul className=' font-Karla text-xl text-blacklim font-medium'>
+                    <ul className=' font-Karla text-3xl md:text-xl text-blacklim font-medium'>
                         <li className='flex flex-col'>
                             <a href="">Home</a>
                             <a href="">About</a>
@@ -21,11 +21,11 @@ function Footer() {
                         </li>
                     </ul>
                 </article>
-                <article className='px-20'>
-                    <h2 className=' font-Markazy text-4xl text-blacklim font-semibold py-10'>
+                <article className='md:px-20'>
+                    <h2 className=' font-Markazy text-7xl md:text-4xl text-blacklim font-semibold py-10'>
                         Contact
                     </h2>
-                    <ul className=' font-Karla text-xl text-blacklim font-medium'>
+                    <ul className=' font-Karla text-3xl md:text-xl text-blacklim font-medium'>
                         <li className='flex flex-col'>
                             <a href="">Phone Number</a>
                             <a href="">Email</a>
@@ -33,11 +33,11 @@ function Footer() {
                         </li>
                     </ul>
                 </article>
-                <article className='px-20'>
-                    <h2 className=' font-Markazy text-4xl text-blacklim font-semibold py-10'>
+                <article className='md:px-20'>
+                    <h2 className=' font-Markazy text-7xl md:text-4xl text-blacklim font-semibold py-10'>
                         Social Media
                     </h2>
-                    <ul className=' font-Karla text-xl text-blacklim font-medium'>
+                    <ul className=' font-Karla text-3xl md:text-xl text-blacklim font-medium'>
                         <li className='flex flex-col'>
                             <a href="">Instagram</a>
                             <a href="">Linkedin</a>
