@@ -1,7 +1,9 @@
 import React from 'react'
-import { useRouteError } from "react-router-dom"
+import { useNavigate, useRouteError } from "react-router-dom"
 
 const NoMatchRoute = () => {
+
+  navigate = useNavigate()
   const error = useRouteError()
 
   return (
@@ -13,6 +15,8 @@ const NoMatchRoute = () => {
       </p>
       <button 
         className='text-xl'
+        aria-label='Return home'
+        onClick={() => navigate('/littleLemon')}
       >
         return
       </button>

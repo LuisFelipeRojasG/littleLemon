@@ -4,15 +4,27 @@ import { NavLink } from "react-router-dom"
 function Nav() {
   
   return (
-    <div className=' hidden md:block md:col-start-7  md:col-end-12'>
-      <ul>
-        <li className='flex text-2xl font-Karla font-medium gap-5'>
-          <NavLink to={'/littleLemon'} >Home</NavLink>
+    <div className='w-auto hidden md:block md:col-start-7 md:col-span-5'>
+      <ul role='menu' className='w-auto flex justify-between'>
+        <li className='text-2xl font-Karla font-medium gap-5'>
+          <NavLink role='menuitem' to={'/littleLemon'} >Home</NavLink>
+        </li>
+        <li className='text-2xl font-Karla font-medium gap-5'>
           <NavLink>About</NavLink>
+        </li>
+        <li className='text-2xl font-Karla font-medium gap-5'>
           <NavLink>Menu</NavLink>
-          <NavLink to={'/booking'}>Reserv Table</NavLink>
-          <NavLink to={'/reservations'}>Reservations</NavLink>
+        </li>
+        <li className='text-2xl font-Karla font-medium gap-5'>
+          <NavLink role='menuitem' to={'/booking'}>Reserv Table</NavLink>
+        </li>
+        <li className='text-2xl font-Karla font-medium gap-5'>
+          <NavLink role='menuitem' to={'/reservations'}>Reservations</NavLink>
+        </li>
+        <li className='text-2xl font-Karla font-medium gap-5'>
           <NavLink>Order online</NavLink>
+        </li>
+        <li className='text-2xl font-Karla font-medium gap-5'>
           <NavLink>Login</NavLink>
         </li>
       </ul>

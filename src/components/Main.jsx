@@ -26,7 +26,7 @@ function Main() {
       <section className='w-screen pt-28 md:pt-64 h-auto '>
         <div className='w-screen flex flex-col items-center md:flex-row md:justify-between md:px-96 mb-40'>
           <h2 className=' text-blacklim font-Markazy font-medium text-[64px]'>Specials</h2>
-          <button className='w-[250px] p-6 rounded-full text-blacklim font-Karla font-bold text-2xl bg-yellowlim'>Online menu</button>
+          <button className='w-[250px] p-6 rounded-full text-blacklim font-Karla font-bold text-2xl bg-yellowlim' aria-disabled='true'>Online menu</button>
         </div>
         <div className='w-screen flex flex-col items-center md:flex-row md:justify-between md:px-16 pb-14 '>
           {

@@ -10,39 +10,33 @@ function Footer() {
                     <h2 className=' font-Markazy text-7xl md:text-4xl text-blacklim font-semibold py-10'>
                         Navigation
                     </h2>
-                    <ul className=' font-Karla text-3xl md:text-xl text-blacklim font-medium'>
-                        <li className='flex flex-col'>
-                            <a href="">Home</a>
-                            <a href="">About</a>
-                            <a href="">Menu</a>
-                            <a href="">Reservations</a>
-                            <a href="">Order online</a>
-                            <a href="">Login</a>
-                        </li>
+                    <ul role='menu' className=' font-Karla text-3xl md:text-xl text-blacklim font-medium'>
+                        <li role='menuitem'><a href="">Home</a></li>
+                        <li role='menuitem'><a href="">About</a></li>
+                        <li role='menuitem'><a href="">Menu</a></li>
+                        <li role='menuitem'><a href="">Reservations</a></li>
+                        <li role='menuitem'><a href="">Order online</a></li>
+                        <li role='menuitem'><a href="">Login</a></li>
                     </ul>
                 </article>
                 <article className='md:px-20'>
                     <h2 className=' font-Markazy text-7xl md:text-4xl text-blacklim font-semibold py-10'>
                         Contact
                     </h2>
-                    <ul className=' font-Karla text-3xl md:text-xl text-blacklim font-medium'>
-                        <li className='flex flex-col'>
-                            <a href="">Phone Number</a>
-                            <a href="">Email</a>
-                            <a href="">Address</a>
-                        </li>
+                    <ul role='menu' className=' font-Karla text-3xl md:text-xl text-blacklim font-medium'>
+                        <li role='menuitem'><a href="">Phone Number</a></li>
+                        <li role='menuitem'><a href="">Email</a></li>
+                        <li role='menuitem'><a href="">Address</a></li>
                     </ul>
                 </article>
                 <article className='md:px-20'>
                     <h2 className=' font-Markazy text-7xl md:text-4xl text-blacklim font-semibold py-10'>
                         Social Media
                     </h2>
-                    <ul className=' font-Karla text-3xl md:text-xl text-blacklim font-medium'>
-                        <li className='flex flex-col'>
-                            <a href="">Instagram</a>
-                            <a href="">Linkedin</a>
-                            <a href="">Pinterest</a>
-                        </li>
+                    <ul role='menu' className=' font-Karla text-3xl md:text-xl text-blacklim font-medium'>
+                        <li role='menuitem'><a href="">Instagram</a></li>
+                        <li role='menuitem'><a href="">Linkedin</a></li>
+                        <li role='menuitem'><a href="">Pinterest</a></li>
                     </ul>
                 </article>
             </section>

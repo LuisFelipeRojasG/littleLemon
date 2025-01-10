@@ -45,43 +45,52 @@ function BookingForm() {
 
   return (
     <form id='res-reserv' className='flex flex-col' onSubmit={onSubmit}>
-        <label className='text-whitelim font-Karla font-light text-[26px]' htmlFor='res-date'>Choose date</label>
+        <label className='text-whitelim font-Karla font-light text-[26px]' htmlFor='reserve-date'>Choose date</label>
         <input 
           className='w-auto mb-5 p-2 rounded-full' 
-          type='date' 
-          id='res-date'
+          type='date'
+          aria-required='true'
+          id='reserve-date'
           onChange={e => setDate(e.target.value)}
         />
-        <label className='text-whitelim font-Karla font-light text-[26px]'  htmlFor='res-time'>Choose time</label>
+        <label className='text-whitelim font-Karla font-light text-[26px]'  htmlFor='reserve-time'>Choose time</label>
         <select 
-          className='w-auto mb-5 p-2 rounded-full' 
-          id='res-time'
+          className='w-auto mb-5 p-2 rounded-full'
+          aria-required='true'
+          id='reserve-time'
           onChange={e => setTime(e.target.value)}
         >
           {times.map((e, index) => 
             <option value={e.time} key={index}>{e.time}</option>
           )}
         </select>
-        <label className='text-whitelim font-Karla font-light text-[26px]'  htmlFor="guests">Choose a table</label>
+        <label className='text-whitelim font-Karla font-light text-[26px]'  htmlFor="reserve-table">Choose a table</label>
         <select 
           className='w-auto mb-5 p-2 rounded-full'
-          id="res-table"
+          aria-required='true'
+          id="reserve-table"
           onChange={e => setTable(e.target.value)}
         >
            {tables.map((e, index) => 
             <option value={e.table} key={index}>{e.table}</option>
           )}
         </select>
-        <label className='text-whitelim font-Karla font-light text-[26px]'  htmlFor="occasion">Occasion</label>
+        <label className='text-whitelim font-Karla font-light text-[26px]'  htmlFor="reserve-occasion">Occasion</label>
         <select 
-          className='w-auto mb-10 p-2 rounded-full' 
-          id="res-occasion"
+          className='w-auto mb-10 p-2 rounded-full'
+          aria-required='true'
+          id="reserve-occasion"
           onChange={e => setOccasion(e.target.value)}>
             <option></option>
             <option>Birthday</option>
             <option>Anniversary</option>
         </select>
-        <button className='mb-5 p-2 rounded-full bg-yellowlim text-center' typeof="submit" value="Make Your reservation" onClick={() => navigate('/success')}
+        <button 
+          className='mb-5 p-2 rounded-full bg-yellowlim text-center' 
+          typeof="submit"
+          aria-label='send-reserv'
+          value="Make Your reservation" 
+          onClick={() => navigate('/success')}
         >Make Your reservation</button>
     </form>
   )
