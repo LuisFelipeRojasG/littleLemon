@@ -1,5 +1,5 @@
 import React from 'react'
-import star from '../assets/image/star.jpg'
+import star from '../assets/image/star.webp'
 
 function TestimonialCard({image, name, message}) {
   return (

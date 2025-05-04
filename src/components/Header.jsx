@@ -1,5 +1,5 @@
 import React from 'react'
-import Icon from '../assets/icon/Logo.png'
+import Icon from '../assets/icon/Logo.webp'
 import Logo from '../assets/image/Logo.svg'
 import Nav from '../components/Nav'
 import { IoMdMenu } from "react-icons/io";

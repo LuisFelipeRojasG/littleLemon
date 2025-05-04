@@ -1,12 +1,11 @@
-import React, { useState } from 'react'
-import restauranfood from '../assets/image/restauranfood.jpg'
-import SpecialCard from './SpecialCard'
-import { dataSpecial, dataTestimonial } from '../data/dataCard.js'
-import TestimonialCard from './TestimonialCard.jsx'
-import chefs from '../assets/image/chefs.jpg'
-import restaurant from '../assets/image/restaurant.jpg'
-import { useNavigate } from 'react-router-dom'
 
+import { useNavigate } from 'react-router-dom'
+import SpecialCard from './SpecialCard'
+import TestimonialCard from './TestimonialCard'
+import { dataSpecial, dataTestimonial } from '../data/dataCard.js'
+import chefs from '../assets/image/chefs.webp'
+import restaurant from '../assets/image/restaurant.webp'
+import restauranfood from '../assets/image/restauranfood.webp'
 
 function Main() {
 

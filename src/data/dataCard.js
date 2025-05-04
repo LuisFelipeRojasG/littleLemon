@@ -1,10 +1,10 @@
-import greekSalad from '../assets/image/greek_salad.jpg'
-import bruschetta from '../assets/image/bruschetta.png'
-import lemondessert from '../assets/image/lemon_dessert.jpg'
-import perfil01 from '../assets/image/perfil01.jpg'
-import perfil02 from '../assets/image/perfil02.jpg'
-import perfil03 from '../assets/image/perfil03.jpg'
-import perfil04 from '../assets/image/perfil04.jpg'
+import greekSalad from '../assets/image/greek_salad.webp'
+import bruschetta from '../assets/image/bruschetta.webp'
+import lemondessert from '../assets/image/lemon_dessert.webp'
+import perfil01 from '../assets/image/perfil01.webp'
+import perfil02 from '../assets/image/perfil02.webp'
+import perfil03 from '../assets/image/perfil03.webp'
+import perfil04 from '../assets/image/perfil04.webp'
 
 const dataSpecial = [
     {
