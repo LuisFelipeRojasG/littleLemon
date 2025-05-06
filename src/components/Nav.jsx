@@ -10,10 +10,10 @@ function Nav() {
           <NavLink role='menuitem' to={'/littleLemon'} >Home</NavLink>
         </li>
         <li className='text-2xl font-Karla font-medium gap-5'>
-          <NavLink>About</NavLink>
+          <NavLink role='menuitem' to={'/littleLemon'} >About</NavLink>
         </li>
         <li className='text-2xl font-Karla font-medium gap-5'>
-          <NavLink>Menu</NavLink>
+          <NavLink role='menuitem' to={'/littleLemon'} >Menu</NavLink>
         </li>
         <li className='text-2xl font-Karla font-medium gap-5'>
           <NavLink role='menuitem' to={'/booking'}>Reserv Table</NavLink>
@@ -22,10 +22,10 @@ function Nav() {
           <NavLink role='menuitem' to={'/reservations'}>Reservations</NavLink>
         </li>
         <li className='text-2xl font-Karla font-medium gap-5'>
-          <NavLink>Order online</NavLink>
+          <NavLink role='menuitem' to={'/littleLemon'} >Order online</NavLink>
         </li>
         <li className='text-2xl font-Karla font-medium gap-5'>
-          <NavLink>Login</NavLink>
+          <NavLink role='menuitem' to={'/littleLemon'} >Login</NavLink>
         </li>
       </ul>
     </div>

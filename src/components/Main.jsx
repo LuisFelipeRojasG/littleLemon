@@ -17,7 +17,7 @@ function Main() {
         <div className='flex flex-col items-center md:items-start w-screen py-10 md:px-40 bg-greenlim '>
           <h1 className=' text-yellowlim font-Markazy font-medium text-[64px]'>Little Lemon</h1>
           <span className=' text-whitelim font-Markazy font-light text-[40px]'>Chicago</span>
-          <p className='w-[420px] text-whitelim font-Karla font-light text-[26px] text-justify pb-12 md:w-[420px] '>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
+          <p className='w-[420px] text-whitelim font-Karla font-light text-[26px]  pb-12 md:w-[420px] '>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
           <button className='w-[250px] p-6 rounded-full text-blacklim font-Karla font-bold text-2xl bg-yellowlim ' onClick={() => navigate('/booking')}>Reserve a Table</button>
         </div>
         <img className='hidden md:block md:absolute md:top-52 md:right-40 md:w-[500px] md:h-[620px] md:rounded-2xl' src={restauranfood} alt="restaurant food" />
