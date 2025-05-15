@@ -3,10 +3,10 @@ import Logo from '../assets/image/Logo.svg'
 
 function Footer() {
     return (
-        <div className='w-screen flex flex-col items-center md:flex-row pb-10 border-b-blacklim border-t-8'>
-            <img className=' md:mx-20 my-20 w-72 md:w-52 basis-1/4' src={Logo} alt="Little Lemon" />
-            <section className='basis-3/4 grid md:grid-cols-3 gap-10 md:pr-40'>
-                <article className='md:px-20'>
+        <div className='w-screen flex flex-col items-center xl:flex-row pb-10 border-b-blacklim border-t-8'>
+            <img className=' lg:mx-20 my-20 w-72 lg:w-52 basis-1/4' src={Logo} alt="Little Lemon" />
+            <section className='basis-3/4 flex justify-center lg:grid lg:grid-cols-3 gap-10 lg:pr-20'>
+                <article className='lg:px-20'>
                     <h2 className=' font-Markazy text-7xl md:text-4xl text-blacklim font-semibold py-10'>
                         Navigation
                     </h2>
@@ -19,7 +19,7 @@ function Footer() {
                         <li role='menuitem'><a href="">Login</a></li>
                     </ul>
                 </article>
-                <article className='md:px-20'>
+                <article className='lg:px-20'>
                     <h2 className=' font-Markazy text-7xl md:text-4xl text-blacklim font-semibold py-10'>
                         Contact
                     </h2>
@@ -29,7 +29,7 @@ function Footer() {
                         <li role='menuitem'><a href="">Address</a></li>
                     </ul>
                 </article>
-                <article className='md:px-20'>
+                <article className='lg:px-20'>
                     <h2 className=' font-Markazy text-7xl md:text-4xl text-blacklim font-semibold py-10'>
                         Social Media
                     </h2>
