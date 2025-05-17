@@ -11,9 +11,9 @@ Proyecto final del curso de Front-End developer de META. La página web del rest
 
 ## Screenshot
 
-![App Screenshot](https://github.com/LuisFelipeRojasG/littleLemon/blob/main/src/assets/image/littleLemon01.png)
-![App Screenshot](https://github.com/LuisFelipeRojasG/littleLemon/blob/main/src/assets/image/littleLemon02.png)
-![App Screenshot](https://github.com/LuisFelipeRojasG/littleLemon/blob/main/src/assets/image/littleLemon03.png)
+![App Screenshot](https://github.com/LuisFelipeRojasG/littleLemon/blob/main/src/assets/image/littleLemon01.webp)
+![App Screenshot](https://github.com/LuisFelipeRojasG/littleLemon/blob/main/src/assets/image/littleLemon02.webp)
+![App Screenshot](https://github.com/LuisFelipeRojasG/littleLemon/blob/main/src/assets/image/littleLemon03.webp)
 
 
 

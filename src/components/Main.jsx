@@ -14,13 +14,13 @@ function Main() {
   return (
     <div id='main'>
       <section className='w-screen'>
-        <div className='flex flex-col items-center w-full py-10 lg:items-start lg:px-20 xl:px-40 2xl:px-80 bg-greenlim '>
+        <div className='flex flex-col items-center w-full py-10 lg:items-start lg:px-20 xl:px-40 2xl:px-60 bg-greenlim '>
           <h1 className=' text-yellowlim font-Markazy font-medium text-[64px]'>Little Lemon</h1>
           <span className=' text-whitelim font-Markazy font-light text-[40px]'>Chicago</span>
           <p className='w-auto text-whitelim font-Karla font-light text-[26px] px-8 lg:px-0 pb-12 lg:w-[420px] xl:w-[550px] '>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
           <button className='w-[250px] p-6 rounded-full text-blacklim font-Karla font-bold text-2xl bg-yellowlim ' onClick={() => navigate('/booking')}>Reserve a Table</button>
         </div>
-        <img className='hidden md:absolute md:top-52 md:right-40 md:rounded-2xl lg:block lg:right-20 lg:w-1/3 lg:h-1/2 xl:w-[520px] xl:h-[620] xl:right-40 2xl:right-80' src={restauranfood} alt="restaurant food" />
+        <img className='hidden md:absolute md:top-52 md:right-40 md:rounded-2xl lg:block lg:right-20 lg:w-1/3 lg:h-1/2 xl:w-[520px] xl:h-[620] xl:right-40 2xl:right-60' src={restauranfood} alt="restaurant food" />
       </section>
       <section className='w-screen pt-28 md:pt-64 h-auto '>
         <div className='w-screen flex flex-col items-center md:flex-row lg:flex-row md:justify-between md:px-20 mb-40 xl:px-96'>
