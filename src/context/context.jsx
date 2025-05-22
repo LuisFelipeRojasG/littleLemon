@@ -16,6 +16,15 @@ function LemonProvider ({children}) {
     const [table, setTable] = useState('')
     const [occasion, setOccasion] = useState('')
     const [reservation, setReservation] = useState([])
+    const [menuOpen, setMenuOpen] = React.useState('hidden')
+
+    const handleMenu = () => {
+        if (menuOpen === 'hidden') {
+        setMenuOpen('flex')
+        } else {
+        setMenuOpen('hidden')
+        }
+    }
 
     const newReserv = async (data) => {
         try {
@@ -47,7 +56,9 @@ function LemonProvider ({children}) {
                 setOccasion,
                 newReserv,
                 getReserv,
-                reservation
+                reservation,
+                handleMenu,
+                menuOpen,
             }}>
                 {children}
         </LemonContext.Provider>
